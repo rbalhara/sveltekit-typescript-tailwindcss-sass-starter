@@ -79,5 +79,8 @@
 		"vite": "^4.4.9",
 		"vitest": "^0.34.1"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"iconify-icon": "^1.0.8"
+	}
 }
