@@ -5,16 +5,16 @@ import Button from "$lib/components/buttons/Button.svelte";
 	import WhiteButton from "$lib/components/buttons/WhiteButton.svelte";
 
 </script>
-Home Page!
+Home Page!!
 
 <div class="flex gap-6">
-   
-    <!--  for referemce    
+
+    <!--  for referemce
     <button class="border-2 p-2 uppercase font-bold hover:bg-black hover:text-yellow">Button1</button>
     <button class="border-2 p-2 uppercase font-bold bg-black text-white hover:bg-transparent hover:text-red">Button2</button>
 
     <Button class="hover:bg-black hover:text-yellow" > New Button1</Button>
-    <Button class="bg-black text-white hover:bg-transparent hover:text-red" > New Button2</Button> 
+    <Button class="bg-black text-white hover:bg-transparent hover:text-red" > New Button2</Button>
     -->
 
     <BlackButton> Black Yellow </BlackButton>
@@ -22,4 +22,3 @@ Home Page!
     <RedButton> Red Button</RedButton>
 
 </div>
-

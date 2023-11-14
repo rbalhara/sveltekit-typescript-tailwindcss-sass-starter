@@ -8,10 +8,10 @@
 
 	setContext('site.title', 'Logitech');
 
-	
+
 	let rtl = false;
 	let dir;
-	
+
 	function toggleRtl() {
 		rtl = !rtl;
 	}
@@ -31,13 +31,13 @@
 			<button on:click={toggleRtl}>Toggle RTL</button>
 
 			<div class="grid gap-6" dir={getDir(rtl)}>
-				<Header />	
+				<Header />
 				<slot />
 				<Footer />
 			</div>
 
 			<Cart />
-			
+
 		</div>
 	</div>
 </div>

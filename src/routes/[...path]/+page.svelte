@@ -2,5 +2,5 @@
     export let data;
 </script>
 
-[...] Path handler
+[...] Path handlers
 Path: {data.path}
