@@ -1,25 +1,25 @@
 <script>
-	import Footer from "../lib/components/Footer.svelte";
-	import Header from "../lib/components/Header.svelte";
-	import PlpPageLayout from "../lib/components/PlpPageLayout.svelte";
+	import BlackButton from "$lib/components/buttons/BlackButton.svelte";
+import Button from "$lib/components/buttons/Button.svelte";
+	import RedButton from "$lib/components/buttons/RedButton.svelte";
+	import WhiteButton from "$lib/components/buttons/WhiteButton.svelte";
 
-	let rtl = false;
-	let dir;
-
-	function toggleRtl() {
-		rtl = !rtl;
-	}
-
-	function getDir(foo) {
-		return foo ? 'rtl' : 'ltr';
-	}
-	$: dir = rtl ? 'rtl': 'ltr';
 </script>
+Home Page!
 
-<button on:click={toggleRtl}>Toggle RTL</button>
+<div class="flex gap-6">
+   
+    <!--  for referemce    
+    <button class="border-2 p-2 uppercase font-bold hover:bg-black hover:text-yellow">Button1</button>
+    <button class="border-2 p-2 uppercase font-bold bg-black text-white hover:bg-transparent hover:text-red">Button2</button>
 
- <div class="grid gap-6" dir={getDir(rtl)}>
-	<Header />
-	<PlpPageLayout />
-	<Footer />
- </div>
+    <Button class="hover:bg-black hover:text-yellow" > New Button1</Button>
+    <Button class="bg-black text-white hover:bg-transparent hover:text-red" > New Button2</Button> 
+    -->
+
+    <BlackButton> Black Yellow </BlackButton>
+    <WhiteButton> White Red </WhiteButton>
+    <RedButton> Red Button</RedButton>
+
+</div>
+
