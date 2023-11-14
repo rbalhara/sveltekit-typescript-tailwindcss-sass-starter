@@ -16,7 +16,7 @@
 	$: dir = rtl ? 'rtl': 'ltr';
 </script>
 
-<button on:click={toggleRtl}>Toggle RTL</button>
+<button on:click={toggleRtl}>Toggle RTL Button</button>
 
  <div class="grid gap-6" dir={getDir(rtl)}>
 	<Header />
